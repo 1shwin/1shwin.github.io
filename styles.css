@@ -9,7 +9,6 @@
     /* font sizes */
     --text-3xs: 0.42rem;
     --text-sm: 0.875rem;
-    --text-screen: 0.975rem;
     --text-base: 1rem;
     --text-md: 1.25rem;
     --text-lg: 1.5rem;
@@ -182,6 +181,11 @@ h2 {
     animation: dropIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) backwards;
 }
 
+.desk-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .desk-item:hover,
 .desk-item:focus-within {  
     transform: translateY(-15px);
@@ -276,8 +280,18 @@ h2 {
     padding: var(--space-md);
     box-sizing: border-box;
     font-family: var(--font-heading);
-    font-size: var(--text-screen);
+    font-size: var(--text-sm);
     color: var(--color-laptop-screen-text);
+}
+
+.typing-cursor::after {
+    content: '|';
+    animation: blinkFade 1s step-end infinite;
+}
+
+@keyframes blinkFade {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 .laptop-model .base {
