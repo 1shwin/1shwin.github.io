@@ -84,7 +84,9 @@
 }
 
 *, *::before, *::after {
-    transition: back 400ms ease;
+    transition-property: background-color, color, border-color, box-shadow, fill, stroke, outline-color, opacity;
+    transition-duration: 400ms;
+    transition-timing-function: ease;
 }
 
 html, body {
