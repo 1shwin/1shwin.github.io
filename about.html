@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Ashwin Hari</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <script src="theme.js"></script>
+    <script src="about.js" defer></script>
+</head>
+<body>
+    <main class="about-main">
+        <div class="above-fold">
+            <header class="about-header">
+                <h1>About Me</h1>
+            </header>
+            <section class="profile-section animate-on-scroll">
+            <div class="profile-image-container">
+                <img src="/images/pfp.jpg" alt="Profile picture" class="profile-picture">
+            </div>
+            <div class="personal-statement">
+                <p>Hello, I'm Ashwin Hari. I'm currently in my first year at IIIT Hyderabad, doing a BTech in Computer Science and Engineering. I love problem solving and learning more about the world; nothing feels better than the 'a-ha' moment when everything falls into place and an answer suddenly clicks. I'm interested in research that bridges the gap between the abstract and technologies with real world impact. If I'm not drowning in assignments, you'll find me watching a Barca game, reading a science fiction novel or listening to Twenty One Pilots.</p>
+            </div>
+        </section>
+        </div>
+        
+        <section class="timeline-section">
+            <h2 class="animate-on-scroll">Timeline</h2>
+            <ol class="timeline-list">
+                <li class="animate-on-scroll" tabindex="0">
+                    <div class="timeline-date">2007</div>
+                    <div class="timeline-description">I was born. My first words were "Hello world!" (allegedly).</div>
+                </li>
+                <li class="animate-on-scroll" tabindex="0">
+                    <div class="timeline-date">2011</div>
+                    <div class="timeline-description">Won 1st place in "Frog Jump Race" in LKG. Started an insatiable appetite for winning.</div>
+                </li>
+                <li class="animate-on-scroll" tabindex="0">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-description">Got a hand-me-down laptop to attend online classes. Immediately developed a crippling Youtube addiction (but also a personality).</div>
+                </li>
+                <li class="animate-on-scroll" tabindex="0">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-description">Took my first steps in IIIT. I miss sleep.</div>
+                </li>
+                <li class="animate-on-scroll" tabindex="0">
+                    <div class="timeline-date">2026</div>
+                    <div class="timeline-description">Made a personal website for CS6.201 Introduction to Software System (Best TAs!)</div>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <div class="floating-controls">
+        <a href="./index.html" class="floating-button" aria-label="Go back to Home">
+            <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="True" style="opacity: 1;">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+        </a>
+        <button class="floating-button" aria-label="Toggle dark/light mode" id="theme-toggle-btn">
+            <svg class="theme-icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="True">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="True">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+</body>
+</html>

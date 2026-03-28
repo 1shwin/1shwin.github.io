@@ -1,18 +1,6 @@
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-    document.documentElement.setAttribute('data-theme', savedTheme);
-}
-
-const toggleButton = document.querySelector('.theme-toggle-button');
-toggleButton.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = (currentTheme === 'dark') ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-});
 
 function updateDeskScale() {
-    const desk = document.querySelector('.desk');
+    const desk = document.querySelector('.home-desk');
     if (desk) {
        const scale = desk.clientWidth / 1500;
        desk.style.setProperty('--desk-scale', scale);
@@ -35,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const links = document.querySelectorAll('.desk-item a');
+    const links = document.querySelectorAll('.home-desk-item a');
     links.forEach(link => {
         link.addEventListener('mouseenter', () => {
             const href = link.getAttribute('href');
@@ -69,7 +57,7 @@ class Typewriter {
         this.isOverridden = false;
         this.currentTimeout = null;
         
-        this.element.classList.add('typing-cursor');
+        this.element.classList.add('home-typing-cursor');
         this.type();
     }
     
