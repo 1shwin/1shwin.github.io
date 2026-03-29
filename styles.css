@@ -66,6 +66,8 @@
 
     /* other colors */
     --color-desk: #b16736;
+    --color-error: #d32f2f;
+    --color-error-shadow: rgba(211, 47, 47, 0.2);
 }
 
 /* dark theme */
@@ -81,6 +83,8 @@
     --color-shadow: rgba(0, 0, 0, 0.5);
     --color-shadow-heavy: rgba(0, 0, 0, 0.65);
     --color-shadow-inset: rgba(0, 0, 0, 0.95);
+    --color-error: #ef5350;
+    --color-error-shadow: rgba(239, 83, 80, 0.2);
 }
 
 *, *::before, *::after {
