@@ -117,12 +117,13 @@ header {
     flex-direction: column;
     align-items: center;
     margin: auto 0;
+
+    text-shadow: 0 15px 25px var(--color-shadow);
     animation: textAppear 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.5s both;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
-    text-shadow: 0 15px 25px var(--color-shadow);
 }
 
 h1 {

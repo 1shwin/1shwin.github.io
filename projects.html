@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects - Ashwin Hari</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="theme.js"></script>
+    <script src="home.js" defer></script>
+</head>
+<body>
+    <header class="portfolio-header">
+        <h1>Projects</h1>
+    </header>
+    <main class="portfolio-main">
+        <section class="entries-section">
+            <article class="entry-card">
+                <h2>Personal Website</h2>
+                <div class="entry-description">
+                    <p><strong>What it does:</strong> A responsive and interactive personal portfolio showcasing my projects, research, and timeline, featuring a 3D simulated desk environment and a robust vanilla CSS foundational style system.</p>
+                    <p><strong>Why it was built:</strong> Built as an Assignment for the CS6.201 Introduction to Software System.</p>
+                    <p><strong>What I'd do differently now:</strong></p>
+                    <ul>
+                        <li>Nothing, I made it now 🙃</li>
+                    </ul>
+                    <p><strong>Technology tradeoffs:</strong></p>
+                    <ul>
+                        <li>Opted for modular stylesheets (like <code>home.css</code> and <code>portfolio.css</code>) linked by global variables instead of a single, monolithic CSS file. While this keeps file sizes smaller and logically separates concerns, it relies on strict naming conventions to prevent styles from bleeding across pages.</li>
+                    </ul>
+                    <p><strong>Link:</strong> <a href="https://github.com/1shwin/personal-website">personal-website</a></strong></p>
+                </div>
+            </article>
+
+            <article class="entry-card">
+                <h2>termSync</h2>
+                <div class="entry-description">
+                    <p><strong>What it does:</strong> A real-time, collaborative rich text editor designed for the terminal. Allows multiple users to connect to a central server to edit a document simultaneously. It features live cursor tracking, text formatting, and an integrated C code execution environment.</p>
+                    <p><strong>Why it was built:</strong> Built for Megathon '25 @ Infinium (in < 24 hours)</p>
+                    <p><strong>What I'd do differently now:</strong></p>
+                    <ul>
+                        <li>Code execution currently runs directly on the host server. I'd add containerization to maintain security and stability.</li>
+                        <li>Add an advanced authentication system with different levels of permissions.</li>
+                    </ul>
+                    <p><strong>Technology tradeoffs:</strong></p>
+                    <ul>
+                        <li>Used unencrypted TCP/IP prioritizing low-latency updates over out-of-the-box security for use in trusted local networks, instead of adding TLS.</li>
+                    </ul>
+                    <p><strong>Link:</strong> <a href="https://github.com/1shwin/termSync">termSync</a></strong></p>
+                </div>
+            </article>
+
+            <article class="entry-card">
+                <h2>TwixT</h2>
+                <div class="entry-description">
+                    <p><strong>What it does:</strong> A terminal-based implementation of the classic 2-player strategy board game. It allows players to place pegs on a grid and connect them using knight's move links. The program manages the board state, renders the grid and links, validates legal moves and detects winners.</p>
+                    <p><strong>Why it was built:</strong> Built as a course project for CS1.101 Computer Programming.</p>
+                    <p><strong>What I'd do differently now:</strong></p>
+                    <ul>
+                        <li>Move the game engine (link validation and win-checking) into a standalone library so it could be easily ported.</li>
+                        <li>Use a more modern library like ncurses for better window management and resizing support compared to standard C terminal print.</li>
+                    </ul>
+                    <p><strong>Technology tradeoffs:</strong></p>
+                    <ul>
+                        <li>Using vanilla C gave the program high portability at the cost of advanced TUI elements from a modern library.</li>
+                    </ul>
+                    <p><strong>Link:</strong> <a href="https://github.com/1shwin/twixt">TwixT</a></strong></p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div class="floating-controls">
+        <a href="./home.html" class="floating-button" aria-label="Go back to Home">
+            <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="True" style="opacity: 1;">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+        </a>
+        <button class="floating-button" aria-label="Toggle dark/light mode" id="theme-toggle-btn">
+            <svg class="theme-icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="True">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="True">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+</body>
+</html>
