@@ -7,7 +7,7 @@
 
 .about-header {
     text-align: center;
-    margin: 0 0 var(--space-3xl) 0;
+    margin: var(--space-3xl);
 }
 
 .about-main {
@@ -55,13 +55,12 @@
 }
 
 .timeline-section {
-    margin-top: var(--space-3xl);
-    margin-bottom: var(--space-3xl);
+    margin: var(--space-3xl);
+    text-align: center;
 }
 
 .timeline-section h2 {
-    text-align: center;
-    margin-bottom: var(--space-2xl);
+    text-shadow: 0 15px 25px var(--color-shadow);
 }
 
 .timeline-list {
