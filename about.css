@@ -114,6 +114,82 @@
     transform: translateY(0);
 }
 
+.reading-progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.reading-progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: var(--color-accent);
+}
+
+.resume-prompt-container {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md) var(--space-lg);
+    box-shadow: 0 10px 20px var(--color-shadow-heavy);
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    z-index: 900;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    color: var(--color-text-main);
+}
+
+.resume-prompt-container.show {
+    bottom: var(--space-xl);
+    opacity: 1;
+}
+
+.resume-prompt-container.hide {
+    bottom: -100px;
+    opacity: 0;
+}
+
+.resume-btn {
+    background-color: var(--color-accent);
+    color: var(--color-bg-base);
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-family: var(--font-heading);
+    font-size: var(--text-sm);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.resume-btn:hover {
+    filter: brightness(1.1);
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    font-size: var(--text-lg);
+    cursor: pointer;
+    padding: 0 var(--space-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .animate-on-scroll {
         opacity: 1;
@@ -122,5 +198,24 @@
     
     .timeline-list li:hover {
         transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-prompt-container {
+        width: 85%;
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-md);
+    }
+    
+    .resume-btn {
+        width: 100%;
+    }
+    
+    .close-btn {
+        position: absolute;
+        top: var(--space-xs);
+        right: var(--space-xs);
     }
 }

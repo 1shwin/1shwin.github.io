@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="about.css">
     <script src="theme.js"></script>
     <script src="about.js" defer></script>
+    <script type="module">
+        import { initReadingProgress } from './reading-progress.js';
+        initReadingProgress();
+    </script>
 </head>
 <body>
+    <div class="reading-progress-container" aria-hidden="true">
+        <div class="reading-progress-bar" id="reading-progress-bar"></div>
+    </div>
     <main class="about-main">
         <div class="above-fold">
             <header class="about-header">
