@@ -8,7 +8,7 @@
     flex-direction: column;
 }
 
-body .portfolio-main {
+.portfolio-main {
     font-family: var(--font-body);
 }
 
@@ -44,22 +44,7 @@ body .portfolio-main {
     margin-top: 0;
     margin-bottom: var(--space-sm);
     color: var(--color-accent);
-}
-
-.tech-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-sm);
-    margin-bottom: var(--space-lg);
-}
-
-.tag {
-    background-color: var(--color-accent);
-    color: var(--color-bg-base);
-    padding: var(--space-xs) var(--space-md);
-    border-radius: 9999px;
-    font-size: var(--text-sm);
-    font-family: var(--font-heading);
+    text-wrap: unset;
 }
 
 .entry-description p {

@@ -66,17 +66,9 @@
 .form-group textarea[aria-invalid="true"] {
     border-color: var(--color-error);
 }
-[data-theme="dark"] .form-group input[aria-invalid="true"],
-[data-theme="dark"] .form-group textarea[aria-invalid="true"] {
-    border-color: var(--color-error);
-}
 
 .form-group input[aria-invalid="true"]:focus,
 .form-group textarea[aria-invalid="true"]:focus {
-    box-shadow: 0 0 0 3px var(--color-error-shadow);
-}
-[data-theme="dark"] .form-group input[aria-invalid="true"]:focus,
-[data-theme="dark"] .form-group textarea[aria-invalid="true"]:focus {
     box-shadow: 0 0 0 3px var(--color-error-shadow);
 }
 
@@ -93,16 +85,13 @@
     font-family: var(--font-body);
     font-size: var(--text-base);
     font-weight: 600;
-    color: #ffffff;
+    color: var(--color-bg-base);
     background-color: var(--color-accent);
     border: none;
     border-radius: var(--radius-md);
     padding: var(--space-md) var(--space-xl);
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.2s ease;
-}
-[data-theme="dark"] .accent-btn {
-    color: #e0e0e0;
 }
 
 .accent-btn:hover,
