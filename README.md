@@ -20,7 +20,7 @@
 
 * **W3C HTML Validator:**
 
-![home.html check](screenshots/w3/home.png)
+![index.html check](screenshots/w3/home.png)
 ![about.html check](screenshots/w3/about.png)
 ![projects.html check](screenshots/w3/projects.png)
 ![research.html check](screenshots/w3/research.png)
@@ -28,7 +28,7 @@
 
 * **Lighthouse Audit:**  
 
-![home.html check](screenshots/lighthouse/home.png)
+![index.html check](screenshots/lighthouse/home.png)
 ![about.html check](screenshots/lighthouse/about.png)
 ![projects.html check](screenshots/lighthouse/projects.png)
 ![research.html check](screenshots/lighthouse/research.png)
